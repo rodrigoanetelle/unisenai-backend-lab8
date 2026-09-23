@@ -1,0 +1,23 @@
+body { background-color: #f8f9fa; }
+/* Animações Globais */
+.fade-in { animation: fadeIn 0.5s ease-out forwards; }
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(15px); }
+to { opacity: 1; transform: translateY(0); }
+}
+/* Efeito de Vidro para a Tela de Autenticação */
+.glass-effect {
+background: rgba(255, 255, 255, 0.90);
+backdrop-filter: blur(15px);
+box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+border-radius: 1.5rem;
+border: 1px solid rgba(255, 255, 255, 0.4);
+}
+/* Customização de Navegação e Scrollbar */
+.nav-pills .nav-link { color: #495057; font-weight: 600; border: 1px solid #dee2e6; margin-right: 0.5rem; }
+
+.nav-pills .nav-link.active { background-color: #0d6efd !important; color: white !important; border-color: #0d6efd; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f8f9fa; }
+::-webkit-scrollbar-thumb { background: #ced4da; border-radius: 10px; }
