@@ -16,9 +16,6 @@ app.use(express.static('public'));
 // Rotas
 app.use('/api/alunos', alunoRoutes);
 
-// Certifique-se de importar o cors no topo do ficheiro (junto dos outros imports)
-const cors = require('cors'); 
-
 // Logo após inicializar o app (const app = express();), adicione:
 // Habilita o CORS para evitar bloqueios no navegador
 app.use(cors());
